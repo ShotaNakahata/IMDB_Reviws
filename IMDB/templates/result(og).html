@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping Result</title>
+</head>
+<body>
+    <h1>Scraping Result</h1>
+
+    <!-- Sentiment Graph -->
+    <h2>Sentiment Graph</h2>
+    <img src="{{ url_for('static', filename='SentimentGraph.png') }}" alt="Sentiment Graph">
+
+    <!-- Score of Rate Graph -->
+    <h2>Score of Rate Graph</h2>
+    <img src="{{ url_for('static', filename='score_of_rate.png') }}" alt="Score of Rate Graph">
+
+    <!-- Mutuality Pie Chart -->
+    <h2>Mutuality Pie Chart</h2>
+    <img src="{{ url_for('static', filename='mutuality_pie_chart.png') }}" alt="Mutuality Pie Chart">
+</body>
+</html>

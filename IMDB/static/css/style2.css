@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+  color: rgb(218, 223, 228);
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.site-title {
+  font-size: 50px;
+}
+
+.sec-title {
+  position: absolute;
+  color: black;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* 横並びにするために flex を使用 */
+}
+
+li {
+  margin-right: 20px; /* 画像間のスペース調整 */
+}
+
+li img {
+  width: 550px;
+  height: auto; /* 高さを自動調整 */
+  margin-top: 300px;
+}

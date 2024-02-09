@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My Work - Portfolio</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="static/img/favicon.ico">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- index.html -->
+    
+
+
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html">AI sentiment analysis of comments</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="icon" src=".static/img/icon-instagram.png" alt="インスタグラム">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="static/img/mainvisual-sp.jpg">
+          <img src="static/img/mainvisual-pc.jpg" alt="テキストテキストテキスト">
+        </picture>
+      </div>
+
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About features of this website</h2>
+        <ul>
+          <li>"AI sentiment analysis of comments"</li>
+
+          <li>Collects 25 comments from the comment section of a given IMDB web site, starting with the newest one.
+            The comments are identified by NLTK using negative and positive words, and three graphs are displayed</li>
+
+          <li>1,A graph showing the percentage of rating scores given to the film.</li>
+
+          <li>2. A graph showing the percentage of negative and positive comments identified by sentiment analysis.</li>
+
+          <li>3. A graph showing the agreement between the ratings voluntarily given by the user and the ratings identified by the sentiment analysis function.</li>
+        </ul>
+
+        <h2 class="sec-title">How to use</h2>
+        <ul>
+          <li>1. Click the button "Run Scraping" at the bottom</li>
+
+          <li>2. The result screen will automatically change to the result screen.</li>
+
+          <li>3. Check the graph of the three results displayed there</li>
+        </ul>
+
+
+      </section>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Work example</h2>
+        <ul>
+          <li><img src="static/img/works1.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="static/img/works2.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="static/img/works3.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="static/img/works4.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="static/img/works5.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="static/img/works6.jpg" alt="テキストテキストテキスト"></li>
+        </ul>
+      </section>
+
+      <section id="run_scraping" class="wrapper">
+        <form action="/run_scraping" method="post">
+            <button type="submit">Run Scraping</button>
+        </form>
+      </section>
+
+
+
+    <footer id="footer">
+      <p>&copy; AI sentiment analysis of comments</p>
+    </footer>
+
+  </body>
+
+</html>
